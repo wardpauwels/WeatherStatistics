@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>WeatherStats | Home</title>
+    <link rel="Site icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #60A65F;">
+        <a class="navbar-brand" href="/index">
+            <img src="assets/images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            WeatherStats
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/temperatuur">Temperatuur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/regen">Regen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/luchtvochtigheid">Luchtvochtigheid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/druk">Druk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/hoogte">Hoogte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container mainSection">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-10">
+            <section id="latestUpdateInfo">
+                <p>Laatst geüpdatet op: ... om: ... GMT</p>
+            </section>
+            <section class="mainSection" id="weatherInfoMain">
+                <a href="/Temperatuur">
+                    <div id="Temperatuur" class="weatherStatMainBox">
+                        <h2>Temperatuur</h2>
+                        <img width="150px" height="150px" src="assets/images/weathericons/temp0.svg" alt="Temperatuur">
+                        <p><span>0</span>°C</p>
+                    </div>
+                </a>
+                <a href="/Regensterkte">
+                    <div id="Regensterkte" class="weatherStatMainBox">
+                        <h2>Regensterkte</h2>
+                        <img width="150px" height="150px" src="assets/images/weathericons/rain0.svg" alt="Regensterkte">
+                        <p><span>0</span>%</p>
+                    </div>
+                </a>
+                <a href="/Luchtvochtigheid">
+                    <div id="Luchtvochtigheid" class="weatherStatMainBox">
+                        <h2>Luchtvochtigheid</h2>
+                        <img width="150px" height="150px" src="assets/images/weathericons/humidity0.svg" alt="Luchtvochtigheid">
+                        <p><span>0</span>%</p>
+                    </div>
+                </a>
+                <a href="/Druk">
+                    <div id="Druk" class="weatherStatMainBox">
+                        <h2>Druk</h2>
+                        <img width="150px" height="150px" src="assets/images/weathericons/pressure0.svg" alt="Druk">
+                        <p><span>0</span> bar</p>
+                    </div>
+                </a>
+                <a href="/Hoogte">
+                    <div id="Hoogte" class="weatherStatMainBox">
+                        <h2>Hoogte</h2>
+                        <img width="150px" height="150px" src="assets/images/weathericons/height0.svg" alt="Hoogte">
+                        <p><span>0</span> meter</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>WeatherStats&copy; 2017 - Ward Pauwels - Student Howest TI</p>
+</footer>
+
+</body>
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/scriptMain.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function () {
+            console.log("Service Worker Registered");
+        });
+    }
+</script>
+
+</html>

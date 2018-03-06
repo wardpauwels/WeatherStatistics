@@ -1,0 +1,79 @@
+body {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #FFEC97;
+    font-size: 1rem;
+    color: #2B3D54;
+}
+
+a {
+    color: #2B3D54;
+}
+
+nav {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 25px;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+}
+
+footer {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #FFEC97;
+    background-color: #40848C;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer>p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#error > div {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+#latestUpdateInfo{
+    text-align: left;
+}
+.mainSection {
+    text-align: center;
+}
+
+.weatherStatMainBox {
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: #C7B876;
+    border: 1px solid #2B3D54;
+    border-radius: 10px;
+}
+
+#chartDays, #chartHours{
+    margin-left: 10px;
+    margin-right: 10px;
+}

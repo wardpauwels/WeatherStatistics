@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>WeatherStats | Hoogte</title>
+    <link rel="Site icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #60A65F;">
+        <a class="navbar-brand" href="/index">
+            <img src="assets/images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            WeatherStats
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/temperatuur">Temperatuur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/regen">Regen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/luchtvochtigheid">Luchtvochtigheid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/druk">Druk</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/hoogte">Hoogte <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="mainSection">
+    <div id="chartDays" style="width: 100%; height: 500px;"></div>
+    <div id="chartHours" style="width: 100%; height: 500px;"></div>
+</section>
+
+<footer>
+    <p>WeatherStats&copy; 2017 - Ward Pauwels - Student Howest TI</p>
+</footer>
+
+</body>
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/scriptAltitude.js"></script>
+
+</html>
